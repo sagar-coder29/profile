@@ -342,3 +342,63 @@ body {
 .nav-item:hover {
   text-decoration: underline;
 }
+
+/* GitHub stats section */
+.stats {
+  background-color: #050509;
+  color: #ffffff;
+  padding: 80px 60px;
+}
+
+.stats-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.stats-text {
+  flex: 1;
+}
+
+.stats-text h2 {
+  font-size: 32px;
+  margin: 15px 0;
+}
+
+.stats-text .desc {
+  max-width: 420px;
+}
+
+.stats-cards {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.stats-card {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 12px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 768px) {
+  .stats {
+    padding: 60px 20px;
+  }
+
+  .stats-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .stats-cards {
+    width: 100%;
+    align-items: stretch;
+  }
+}
